@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型--内边距</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding-left: 20px;
+            padding-top: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            /* 内边距的复合写法：1个值表示上下左右，2表示上下、左右，3表示上、左右、下，四表示上、右、下、左 */
+            padding: 5px 10px 15px;
+            /* padding会影响盒子实际大小 */
+            /* 如果盒子本身没有指定width/height属性，则此时padding不会撑开盒子大小 */
+            /* 只指定了height，那么设置padding-left或padding-right盒子不会被撑开 */
+            /* 只指定了width，那么设置padding-top或padding-bottom盒子不会被撑开 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>盒子内容是content 盒子内容是content 盒子内容是content 盒子内容是content</div>
+</body>
+
+</html>

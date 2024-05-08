@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器（css）</title>
+    <style>
+        /* 标签选择器,将某一类标签全部选择出来 */
+        p {
+            color: red;
+            font-size: 12px;
+        }
+
+        /* 类选择器 */
+        .red {
+            color: red;
+        }
+
+        .red1 {
+            width: 100px;
+            height: 100px;
+            /* 背景颜色 */
+            background-color: red;
+        }
+
+        .yellow1 {
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .font35 {
+            font-size: 35px;
+        }
+
+        /* id选择器 */
+        #pink {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p>有点意思</p>
+    <ul>
+        <li class="red">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <em class="red font35">我是倾斜，我也想变红色</em><!--多类名选择器，选用了多个标签-->
+    <div class="red1">红色</div>
+    <div class="yellow1 red">黄色</div>
+    <div class="red1">红色</div>
+    <div id="pink">杰克逊</div>
+</body>
+
+</html>

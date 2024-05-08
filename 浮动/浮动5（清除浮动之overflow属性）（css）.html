@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动5（清除浮动之overflow属性）</title>
+    <style>
+        .box {
+            overflow: hidden;
+            /* 上面这行代码的缺点：无法显示溢出的部分 */
+            /* 属性也可以是auto、scroll */
+            width: 800px;
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+
+        .damao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="damao">111</div>
+        <div class="ermao">222</div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

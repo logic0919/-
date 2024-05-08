@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+
+<body>
+    <table align="center" border="" cellpadding="10" cellspacing="0" width="700" height="">
+        <thead>
+            <tr>
+                <!-- 表头单元格标签th，表头单元格里面的文本加粗并且居中显示。 -->
+                <!-- tr标签用于定义表格中的行，必须嵌套在table标签中。 -->
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!-- td 用于定义表格中的单元格，必须嵌套在tr标签中。 -->
+                <td>1</td>
+                <td>琅琊榜</td>
+                <td></td>
+                <td>345</td>
+                <td>123</td>
+                <td>ha</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>三体</td>
+                <td></td>
+                <td>666</td>
+                <td>123</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">贴吧</a></td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>暗恋橘生淮南</td>
+                <td></td>
+                <td>345</td>
+                <td>999</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">贴吧</a></td>
+            </tr>
+        </tbody>
+        <!-- < thead>< /thead>：用于定义表格的头部。用来放标题之类的东西。< thead> 内部必须拥有< tr> 标签。
+        < tbody>< /tbody>：用于定义表格的主体。放数据本体。
+        < tfoot>< /tfoot>放表格的脚注之类。
+         以上标签都是放到table标签中。 -->
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型--表格</title>
+    <style> 
+        th {
+            border: 2px solid green;
+        }
+
+        table {
+            border: 8px solid pink;
+            background-color: aqua;
+            border-collapse: collapse;
+            /* 表示相邻边框合并在一起 */
+        }
+
+        td {
+            border: 4px solid blue;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>搜索</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

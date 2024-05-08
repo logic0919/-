@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css背景</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: transparent;
+            /* 值为预定义的颜色值|十六进制|RGB代码 */
+            /*默认，透明色*/
+            /* 背景图片相对于插入图片而言更好控制位置 
+            background-image:none|url(url);
+            使用相对或绝对地址指定背景图像*/
+            background-image: url(images/img2.png);
+            /* background-repeat: repeat（默认情况）|no-repeat|repeat-x|repeat-y; */
+            /* 页面元素即可以设置背景颜色也可以设置背景图片，不过图片会压住颜色。 */
+            background-repeat: no-repeat;
+            /* background-position:x y;
+            x坐标和y坐标，可以使用方位名词（top,center,bottom,left,center,right）或者精确单位(百分数|有浮点数字和单位标识符组成的长度值（如：100px）)。 */
+            background-position: left center;
+            /*和center left效果一样（前提是给定的两个值都是方位名词，才可以是两个值的前后顺序无所谓），都是左中*/
+            /* 如果只写一个方位名词，那么第二个值默认居中对齐 */
+            background-position: 20px 50px;
+            /* 如果给定的是精确参数，那么第一个一定是x，第二个是y */
+            /* 如果只指定一个精确值，那么一定是x坐标，y坐标上默认是垂直居中 */
+            background-position: 20px center;
+            /*混合单位第一个是x坐标，第二个是y坐标*/
+            /* background-attachment: scroll(默认，图片随着滚动)|fixed（图片固定不动）; */
+            background-attachment: scroll;
+            /*背景的复合写法：
+            background:transparent url(image.jpg) repeat-y fixed top;
+            没有固定的顺序。*/
+            background: rgba(0, 0, 0, 0.3);
+            /* 也可以是background: rgba(0, 0, 0, .3); */
+            /* 背景的半透明写法 */
+            /* 第四个数字取0-1之间，0指百分之百的透明，1指百分之百的不透明。 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <!-- 学习内容：背景颜色，背景图片，背景平铺 ，背景图片的位置，背景图像固定-->
+</body>
+
+</html>

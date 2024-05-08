@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式的转换</title>
+    <style>
+        a {
+            width: 150px;
+            height: 50px;
+            background-color: pink;
+            display: block;
+        }
+
+        div {
+            width: 600px;
+            height: 700px;
+            /* 此时上面这两行代码就不起作用了。 */
+            background-color: purple;
+            display: inline;
+        }
+
+        span {
+            width: 300px;
+            height: 100px;
+            background-color: skyblue;
+            display: inline-block;
+            /* 行内块元素：一行可以放多个，可以设置宽度和高度。 */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">行内转换为块状</a>
+    <div>块状转换为行内</div>
+    haha
+    <span>行内元素转换为行内块元素</span>
+    heihei
+</body>
+
+</html>

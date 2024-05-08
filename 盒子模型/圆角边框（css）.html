@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        .one {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 100px;
+            /* border-radius: 50%;第二种方法 */
+        }
+
+        .three {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 75px;
+        }
+
+        .four {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 10px 20px 30px 40px;
+            /* 左上 右上 左下 右下 */
+            /* 如果只有两个值，则分别表示左上和右下，右上和左下 */
+            /* 或者单独设置，如border-top-left-radius，border-bottom-right-radius */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    圆形做法
+    <div class="two"></div>
+    圆角矩形做法
+    <div class="three"></div>
+    可以设置不同的圆角
+    <div class="four"></div>
+</body>
+
+</html>

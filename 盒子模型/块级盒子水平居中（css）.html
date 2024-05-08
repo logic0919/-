@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级盒子水平居中</title>
+    <style>
+        .header {
+            width: 960px;
+            height: 200px;
+            background-color: pink;
+            margin:0 auto;
+            /* 或者以下两种方式均可 */
+            /* margin-left:auto; */
+            /* margin-right:auto; */
+            /* margin:auto; */
+            text-align: center;
+            /* 行内元素或者行内块元素水平居中给其父元素添加text-align: center即可
+            此处控制的是span盒子 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span>
+            里面的文字
+        </span>
+    </div>
+    <!-- 外边距可以让块级元素水平居中，但要满足以下两个条件
+    盒子必须指定了宽度
+    盒子左右的外边距都设置为auto
+    此处控制的是div盒子 -->
+</body>
+
+</html>

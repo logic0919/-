@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css的三大特性</title>
+    <style>
+        body {
+            font: 12px/1.5;
+            color: aqua;
+            /*这里的行高可以带单位也可以不带*/
+            /*此时不带单位，1.5表示行高是当前元素文字大小的1.5倍*/
+            /*这样的写法可以让子元素可以根据自己文字大小自动调整行高*/
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        #father {
+            color: brown;
+        }
+
+        em {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 层叠性--><!--就近原则 -->
+    <!-- 继承性 --><!--子级继承父级-->
+    <!-- text-，font-，line-这些元素开头的可以继承，以及color属性。 -->
+    <div>粉色</div>
+    <!--12px,18px-->
+    <p>粉色</p>
+    <!--16px,24px-->
+    <!-- 优先级 -->
+    <!-- 如果选择器相同，则执行层叠性，即就近原则 -->
+    <!-- 如果不同，则根据选择器的权重，执行权重大的 -->
+    <span id="father">
+        <em>继承的权重0为</em>
+    </span>
+    <a href="#">链接</a>
+    <!-- a链接浏览器默认制定了一个样式，蓝色，有下划线。因为继承的权重为0，所以对body标签指定的样式在此不会显示。要单独手动指定。 -->
+    <!-- 复合选择器有权重叠加的问题，权重虽然会叠加，但不会进位 -->
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体系列（css）</title>
+    <style>
+        /*h2 {
+            font-family: '宋体';
+        }*/
+
+        p {
+            font-style: italic;
+        }
+
+        p {
+            font-family: 'Microsoft Yahei', Arial;
+        }
+
+        /*复合属性的顺序和格式：font:font-style font-weight font-size/line-height font-family
+        顺序不能改变。
+        并且必须保留font-size和font-family属性，否则不起作用。
+        如：
+        div{
+            font:italic 700 16px 'Microsoft Yahei';
+        }
+        */
+        /*先看靠前的字体系统中是否有，如果没有继续看下一个字体，如果都没有，用浏览器默认的字体。*/
+        /*多个字体之间用英文状态下的逗号分隔。*/
+        body {
+            font-size: 20px;
+        }
+
+        /*标题标签比较特殊，要单独设置。*/
+        h2 {
+            font-size: 20px;
+        }
+
+        .bold {
+            /*font-weight:bold;*/
+            font-weight: 700;
+            /*700等价于bold，加粗。400等价于normal。*/
+        }
+
+        .pic {
+            /* 想要图片居中对齐，则让他的父亲标签添加水平居中的代码。 */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>她的睫毛 弯的嘴角</h2>
+    <p class="bold">无预警地 对我笑</p>
+    <p>没有预兆 出乎意料</p>
+    <p>竟然先对我示好</p>
+    <p>她的睫毛 弯的嘴角</p>
+    <p>用眼神 对我拍照</p>
+    <p class="pic"><img src="images/pic.jpg" alt=""></p>
+    <p>我戒不掉 她的微笑</p>
+    <p>洋溢幸福的味道</p>
+</body>
+
+</html>

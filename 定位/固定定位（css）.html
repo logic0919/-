@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位fixed</title>
+    <style>
+        .w {
+            width: 800px;
+            height: 1400px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .fixed {
+            position: fixed;
+            /* 第一步：走浏览器宽度的一半 */
+            top: 20%;
+            left: 50%;
+            /* 第二步：利用margin走版心盒子宽度的一半 */
+            margin-left: 400px;
+            width: 50px;
+            height: 150px;
+            background-color: aqua;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 以下只展示一种特殊情形，即将盒子固定在版心的右侧位置-->
+    <!-- 不保留原先位置 -->
+    <div class="fixed"></div>
+    <div class="w">版心盒子 800px</div>
+</body>
+
+</html>

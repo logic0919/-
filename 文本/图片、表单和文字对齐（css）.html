@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片、表单和文字对齐</title>
+    <style>
+        img {
+            width: 110px;
+        }
+
+        div,
+        .a {
+            border: 3px solid red;
+        }
+
+        .aa {
+            vertical-align: bottom;
+            /* 或者设置成其他值，只要不是baseline */
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10" style="vertical-align: middle;"></textarea>请您留言ppaa
+    <div>
+        <img src="../img1.jpg" />
+    </div>
+    <br>
+    <div>
+        <img src="../img1.jpg" />pink老师。这里图片会和下边框有一定的距离，因为vertical-align默认baseline，即基线对齐。
+    </div>
+    <br>
+    <div>
+        <img class="aa" src="../img1.jpg" />这里是解决后的,第一种解决方法是给图片添加vertical-align: bottom或其他
+    </div>
+    <br>
+    <div>
+        <img src="../img1.jpg" style="display:block" />
+    </div>第二种方法是把图片转换成块级元素,因为vertical-align属性是针对于行内元素或行内块元素的
+    <br>
+    <img class="a" src="../img1.jpg" />
+    <img class="a" src="../img1.jpg" />
+</body>
+
+</html>

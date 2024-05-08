@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器1</title>
+    <style>
+        /* 后代选择器又称为包含选择器。 */
+        /* 样式为元素1 元素2{样式说明} */
+        /* 元素1和元素2可以是任意选择器 */
+        /* 其中元素2可以是儿子、孙子等。 */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: green;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">我是</a>孙子元素</li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">我就不会变绿吧</a></li>
+    </ul>
+    <ol class="nav">
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">我是黄色的</a>孙子元素</li>
+    </ol>
+</body>
+
+</html>
